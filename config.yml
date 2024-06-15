@@ -1,0 +1,40 @@
+packages:
+  - python3-minimal
+  - python3-pip
+  - dbus
+  - docker-ce
+  - docker-ce-cli
+  - containerd
+  - tzdata
+  - lvm2
+  - wireguard
+  - systemd-timesyncd
+  - nmap
+  - tcpdump
+  - iproute2
+  - netcat
+  - helm
+component: main
+release_metadata:
+  Origin: Local Repository
+  Label: Local Repository
+  Description: Local Repository
+key_metadata:
+  Key-Type: RSA
+  Key-Length: 4096
+  Subkey-Type: ELG-E
+  Subkey-Length: 1024
+  Name-Real: Local Repo
+  Name-Comment: local repo
+  Name-Email: peshev@gmail.com
+  Expire-Date: 0
+repositories:
+  docker:
+    uri: https://download.docker.com/linux/ubuntu
+    components:
+      - stable
+    key_url: https://download.docker.com/linux/ubuntu/gpg
+  helm:
+    uri: https://baltocdn.com/helm/stable/debian/
+    suite: all
+    key_url: https://baltocdn.com/helm/signing.asc
