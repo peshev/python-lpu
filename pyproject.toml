@@ -73,7 +73,7 @@ keywords = ["apt", "deb", "repository"]
 # authored the project, and a valid email address corresponding to the name
 # listed.
 authors = [
-  {name = "Peter Peshev", email = "peshev@gmail.com" }
+    { name = "Peter Peshev", email = "peshev@gmail.com" }
 ]
 
 # This should be your name or the names of the organization who currently
@@ -87,29 +87,26 @@ authors = [
 #
 # For a list of valid classifiers, see https://pypi.org/classifiers/
 classifiers = [
-  # How mature is this project? Common values are
-  #   3 - Alpha
-  #   4 - Beta
-  #   5 - Production/Stable
-  "Development Status :: 3 - Alpha",
-
-  # Indicate who your project is intended for
-  "Intended Audience :: Developers",
-  "Topic :: Software Development :: Build Tools",
-
-  # Pick your license as you wish
-  "License :: OSI Approved :: MIT License",
-
-  # Specify the Python versions you support here. In particular, ensure
-  # that you indicate you support Python 3. These classifiers are *not*
-  # checked by "pip install". See instead "requires-python" key in this file.
-  "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: 3.12",
-  "Programming Language :: Python :: 3 :: Only",
+    # How mature is this project? Common values are
+    #   3 - Alpha
+    #   4 - Beta
+    #   5 - Production/Stable
+    "Development Status :: 3 - Alpha",
+    # Indicate who your project is intended for
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    # Pick your license as you wish
+    "License :: OSI Approved :: MIT License",
+    # Specify the Python versions you support here. In particular, ensure
+    # that you indicate you support Python 3. These classifiers are *not*
+    # checked by "pip install". See instead "requires-python" key in this file.
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
 ]
 
 # This field lists other packages that your project depends on to run.
@@ -119,7 +116,10 @@ classifiers = [
 # For an analysis of this field vs pip's requirements files see:
 # https://packaging.python.org/discussions/install-requires-vs-requirements/
 dependencies = [
-  "python-apt"
+    "python-apt",
+    "argparse",
+    "requests",
+    "PyYAML"
 ]
 
 # List additional groups of dependencies here (e.g. development
